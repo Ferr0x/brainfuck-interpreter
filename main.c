@@ -34,7 +34,7 @@ void compute(char character, Celles *c){
             break;
         case '<':
             c->position--;
-            if(c->position == MIN_CELLS){
+            if(c->position <= MIN_CELLS){
                 c->position = 0;
             }
             printf("%d\n",c->position);
